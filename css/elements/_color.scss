@@ -1,0 +1,62 @@
+$red: #be1e2d;
+$red-d: #a21320;
+$gray: #58595b;
+$gray-l: #a5a5a5;
+$gray-ll: #dddddd;
+$gray-lll: #ededed;
+$gray-llll: #f3f3f3;
+$blue: #129fd8;
+$blue-l: #00b6ff;
+$blue-d: #1195cb;
+$orange: #ff7200;
+.cf-clWhite {
+    color: white;
+}
+
+.cf-clGray {
+    color: $gray;
+}
+
+.cf-clRed {
+    color: $red;
+}
+
+.cf-clBlue {
+    color: $blue;
+}
+
+.cf-clOrange {
+    color: $orange;
+}
+
+.cf-bgBlue {
+    background-color: $blue;
+}
+
+.cf-bgOrange {
+    background-color: $orange;
+}
+
+.cf-bgWhite {
+    background-color: white;
+}
+
+.cf-bgRed {
+    background-color: $red;
+}
+
+.cf-bgGray {
+    background-color: $gray;
+}
+
+.cf-bgGray-llll {
+    background-color: $gray-llll;
+}
+
+.cf-bgOrange-5 {
+    background-color: rgba(255, 131, 0, 0.5);
+}
+
+.cf-bgOrange-7 {
+    background-color: rgba(255, 131, 0, 0.75);
+}

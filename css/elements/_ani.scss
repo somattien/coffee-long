@@ -1,0 +1,82 @@
+.cf-ani1 {
+    transition: all 0.1s ease-in;
+}
+
+.cf-ani2 {
+    transition: all 0.2s ease-in;
+}
+
+.cf-ani3 {
+    transition: all 0.3s ease-in;
+}
+
+.cf-ani4 {
+    transition: all 0.4s ease-in;
+}
+
+.cf-ani {
+    transition: all 0.5s ease-in;
+}
+
+.cf-effect {
+    @extend .cf-ani;
+    $num-slide: 10vh;
+    &.cf-ef-move-left {
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transform: translateX($num-slide);
+        -ms-transform: translateX($num-slide);
+        transform: translateX($num-slide);
+    }
+    &.cf-ef-move-right {
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transform: translateX(-$num-slide);
+        -ms-transform: translateX(-$num-slide);
+        transform: translateX(-$num-slide);
+    }
+    &.cf-ef-move-top {
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transform: translateY($num-slide);
+        -ms-transform: translateY($num-slide);
+        transform: translateY($num-slide);
+    }
+    &.cf-ef-move-bottom {
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transform: translateY(-$num-slide);
+        -ms-transform: translateY(-$num-slide);
+        transform: translateY(-$num-slide);
+    }
+    &.cf-ef-active {
+        &.cf-ef-move-left {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+        &.cf-ef-move-right {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+        &.cf-ef-move-top {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+        &.cf-ef-move-bottom {
+            visibility: visible;
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+}

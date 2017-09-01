@@ -1,0 +1,13 @@
+.cf-hidden-mob {
+    display: block !important;
+    @media (max-width: 750px) {
+        display: none !important;
+    }
+}
+
+.cf-show-mob {
+    display: none !important;
+    @media (max-width: 750px) {
+        display: block !important;
+    }
+}

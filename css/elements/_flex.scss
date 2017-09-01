@@ -1,0 +1,108 @@
+//DISPLAY FLEX================
+.cf-fleContainer,
+.cf-fleContainer-mob {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.cf-fleContainer-mob {
+    @media (max-width: 750px) {
+        display: block;
+    }
+}
+
+.cf-fleStart {
+    -moz-justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-pack: start;
+}
+
+.cf-fleEnd {
+    -moz-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    -ms-flex-pack: end;
+}
+
+.cf-fleSpBetween {
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+}
+
+.cf-fleSpAround {
+    -moz-justify-content: space-around;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: space-around;
+}
+
+.cf-fleSpEvenly {
+    -moz-justify-content: space-evenly;
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+}
+
+.cf-fleDrCol {
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.cf-fleDrRow {
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+//full in container
+.cf-fleStretch {
+    -moz-align-items: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -ms-flex-align: stretch;
+}
+
+.cf-fleNowrap {
+    -moz-flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-wrap: none;
+}
+
+.cf-fleWrap {
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.cf-fleOne {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+}
+
+.cf-fleMiddle {
+    -moz-align-self: center;
+    -webkit-align-self: center;
+    align-self: center;
+    -ms-align-self: center;
+}
+
+.cf-fleCenter {
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+}

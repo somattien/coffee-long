@@ -1,0 +1,133 @@
+.cf-icon-btn-social {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    background-color: $gray;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    &>i {
+        display: block;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    &:hover {
+        background-color: $red;
+    }
+    &.cf-small-el {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.cf-icon-btn {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    &>i {
+        display: block;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    &:hover {
+        color: $blue;
+    }
+    &.cf-small-el {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.cf-btn {
+    display: inline-block;
+    position: relative;
+    min-width: 100px;
+    height: 40px;
+    padding: 10px 20px;
+    vertical-align: middle;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    outline: none;
+    border: 0;
+    line-height: 1.2;
+    overflow: hidden;
+    @extend .cf-noSelect;
+    cursor: pointer;
+    text-decoration: none;
+    &.cf-bgRed-el {
+        background-color: $red;
+        color: white;
+    }
+    &.cf-long-el {
+        min-width: 300px;
+        @media (max-width: 750px) {
+            min-width: 100%;
+        }
+    }
+    &:hover {
+        background-color: $red-d;
+    }
+    &:active {
+        background-color: $red;
+    }
+}
+
+.cf-scroll-top-btn {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 0;
+    z-index: 10;
+    outline: none;
+    display: none;
+    i {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 50px;
+    }
+    &:focus {
+        border: 0;
+    }
+    &.cf-active {
+        display: block;
+    }
+}
+
+.cf-a {
+    color: $gray;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        color: $blue;
+    }
+}

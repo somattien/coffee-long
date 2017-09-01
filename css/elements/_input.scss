@@ -1,0 +1,69 @@
+input,
+textarea {
+    border: 1px solid $gray-ll;
+    color: $gray;
+    font-family: 'Roboto-Regular';
+    font-size: 14px;
+    &:focus {
+        // outline-style: auto;
+        // outline-color: $red;
+        // outline-width: 1px;
+        outline: none;
+        border: 1px solid $blue;
+    }
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: $gray-l;
+    font-family: 'Roboto-Light';
+}
+
+.cf-input {
+    position: relative;
+    &>.cf-blinding {
+        width: 100%;
+        padding-right: 30px;
+    }
+    &:hover {
+        &>.cf-close-btn {
+            display: block;
+        }
+    }
+    &>.cf-close-btn {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        background-color: white;
+        padding: 5px 10px;
+        cursor: pointer;
+        display: none;
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+.cf-search {
+    display: inline-block;
+    position: relative;
+    .cf-binding {
+        width: 100%;
+        padding-right: 50px;
+    }
+    .cf-search-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $blue;
+        padding: 10px 15px;
+        min-height: 39px;
+        cursor: pointer;
+        &:hover {
+            background-color: $blue-l;
+        }
+        i {
+            color: white;
+        }
+    }
+}

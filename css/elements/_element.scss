@@ -1,0 +1,389 @@
+//Space=====
+.cf-space {
+    padding-bottom: 5px;
+}
+
+.cf-space-m {
+    padding-bottom: 10px;
+}
+
+.cf-space-mm {
+    padding-bottom: 15px;
+}
+
+.cf-space-mmm {
+    padding-bottom: 20px;
+}
+
+.cf-space-mmmm {
+    padding-bottom: 25px;
+}
+
+//Padding=================================================================
+.cf-p {
+    padding: 5px;
+}
+
+.cf-p-m {
+    padding: 10px;
+}
+
+.cf-p-mm {
+    padding: 15px;
+}
+
+.cf-p-mmm {
+    padding: 20px;
+}
+
+.cf-p-mmmm {
+    padding: 25px;
+}
+
+//padding-left
+.cf-pLeft {
+    padding-left: 5px;
+}
+
+.cf-pLeft-m {
+    padding-left: 10px;
+}
+
+.cf-pLeft-mm {
+    padding-left: 15px;
+}
+
+.cf-pLeft-mmm {
+    padding-left: 20px;
+}
+
+.cf-pLeft-mmmm {
+    padding-left: 25px;
+}
+
+//padding-right
+.cf-pRight {
+    padding-right: 5px;
+}
+
+.cf-pRight-m {
+    padding-right: 10px;
+}
+
+.cf-pRight-mm {
+    padding-right: 15px;
+}
+
+.cf-pRight-mmm {
+    padding-right: 20px;
+}
+
+.cf-pRight-mmmm {
+    padding-right: 25px;
+}
+
+//padding-top
+.cf-pTop {
+    padding-top: 5px;
+}
+
+.cf-pTop-m {
+    padding-top: 10px;
+}
+
+.cf-pTop-mm {
+    padding-top: 15px;
+}
+
+.cf-pTop-mmm {
+    padding-top: 20px;
+}
+
+.cf-pTop-mmmm {
+    padding-top: 25px;
+}
+
+//padding-bottom
+.cf-pBottom {
+    padding-bottom: 5px;
+}
+
+.cf-pBottom-m {
+    padding-bottom: 10px;
+}
+
+.cf-pBottom-mm {
+    padding-bottom: 15px;
+}
+
+.cf-pBottom-mmm {
+    padding-bottom: 20px;
+}
+
+.cf-pBottom-mmmm {
+    padding-bottom: 25px;
+}
+
+//Margin=================================================================
+.cf-m {
+    margin: 5px;
+}
+
+.cf-m-m {
+    margin: 10px;
+}
+
+.cf-m-mm {
+    margin: 15px;
+}
+
+.cf-m-mmm {
+    margin: 20px;
+}
+
+.cf-m-mmmm {
+    margin: 25px;
+}
+
+//margin-left
+.cf-mLeft {
+    margin-left: 5px;
+}
+
+.cf-mLeft-m {
+    margin-left: 10px;
+}
+
+.cf-mLeft-mm {
+    margin-left: 15px;
+}
+
+.cf-mLeft-mmm {
+    margin-left: 20px;
+}
+
+.cf-mLeft-mmmm {
+    margin-left: 25px;
+}
+
+//margin-right
+.cf-mRight {
+    margin-right: 5px;
+}
+
+.cf-mRight-m {
+    margin-right: 10px;
+}
+
+.cf-mRight-mm {
+    margin-right: 15px;
+}
+
+.cf-mRight-mmm {
+    margin-right: 20px;
+}
+
+.cf-mRight-mmmm {
+    margin-right: 25px;
+}
+
+//margin-top
+.cf-mTop {
+    margin-top: 5px;
+}
+
+.cf-mTop-m {
+    margin-top: 10px;
+}
+
+.cf-mTop-mm {
+    margin-top: 15px;
+}
+
+.cf-mTop-mmm {
+    margin-top: 20px;
+}
+
+.cf-mTop-mmmm {
+    margin-top: 25px;
+}
+
+//margin-bottom
+.cf-mBottom {
+    margin-bottom: 5px;
+}
+
+.cf-mBottom-m {
+    margin-bottom: 10px;
+}
+
+.cf-mBottom-mm {
+    margin-bottom: 15px;
+}
+
+.cf-mBottom-mmm {
+    margin-bottom: 20px;
+}
+
+.cf-mBottom-mmmm {
+    margin-bottom: 25px;
+}
+
+//Border======================================
+.cf-br {
+    border: 1px solid $gray-ll;
+}
+
+.cf-brTop {
+    border-top: 1px solid $gray-ll;
+}
+
+.cf-brRight {
+    border-right: 1px solid $gray-ll;
+}
+
+.cf-brBottom {
+    border-bottom: 1px solid $gray-ll;
+}
+
+.cf-brLeft {
+    border-left: 1px solid $gray-ll;
+}
+
+//Float============================================
+.cf-fLeft {
+    float: left;
+}
+
+.cf-fRight {
+    float: right;
+}
+
+//ELLIPSIS===========================
+.cf-ell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//SQUARE-BOX============================
+.cf-sqBox {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+    }
+    .cf-sqContent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+//V-Center============================
+.cf-vCenter {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+}
+
+//WIDTH==================
+.cf-w100p {
+    width: 100%;
+}
+
+//HEIGHT==================
+.cf-h100p {
+    height: 100%;
+}
+
+//DIVISION=======================
+.cf-division {
+    &:before {
+        content: " ";
+        display: table;
+    }
+    width: 100%;
+    &:after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
+.cf-clear {
+    clear: both;
+}
+
+//Hidden/Show=================
+.cf-hidden {
+    display: none;
+}
+
+.cf-show {
+    display: block;
+}
+
+//No-select=================
+.cf-noSelect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+//ON/OFF==============
+.cf-on {
+    display: block !important;
+}
+
+.cf-off {
+    display: none !important;
+}
+
+$h-slider: 449px;
+.cf-block {
+    display: block;
+}
+
+.cf-iblock {
+    display: inline-block;
+}
+
+.cf-pR {
+    position: relative;
+}
+
+.cf-pA {
+    position: absolute;
+}
+
+.cf-pF {
+    position: fixed;
+}
+
+// z-index
+.cf-zindex-1 {
+    z-index: 1;
+}
+
+.cf-zindex-2 {
+    z-index: 2;
+}
+
+.cf-zindex-3 {
+    z-index: 3;
+}

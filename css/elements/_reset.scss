@@ -1,0 +1,41 @@
+*,
+html,
+body {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    @extend .cf-fwNormal;
+    font-size: 14px;
+    color: $gray;
+    line-height: 1.4;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
