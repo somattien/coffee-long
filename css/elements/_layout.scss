@@ -569,4 +569,187 @@
             }
         }
         .cf-group-3 {}
+    } // section 8
+    .cf-sec-8 {
+        .cf-group-1 {
+            margin-bottom: 20px;
+        }
+        .cf-group-2 {
+            margin-bottom: 20px;
+        }
+        .cf-group-3 {
+            padding: 20px;
+            .cf-item {
+                @extend .cf-fleContainer-mob;
+                margin-bottom: 20px;
+                &>.cf-center {
+                    @extend .cf-fleOne;
+                    @media (max-width: 750px) {
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+                }
+                &>div {
+                    .cf-img {
+                        width: 300px;
+                        height: 180px;
+                        @media (max-width: 750px) {
+                            width: 100%;
+                        }
+                    }
+                    @extend .cf-fleMiddle;
+                }
+                .cf-number {
+                    padding: 10px;
+                    background-color: $borrow;
+                    color: white;
+                    border-radius: 30px;
+                    min-width: 60px;
+                    text-align: center;
+                }
+            }
+            @media (max-width: 750px) {
+                .cf-tRight {
+                    text-align: center;
+                }
+            }
+        }
+    } // section 9
+    .cf-sec-9 {
+        .cf-group-1 {
+            padding: 20px;
+            .cf-text {
+                @extend .cf-fleContainer;
+                color: white;
+                .cf-right {
+                    @extend .cf-fleOne;
+                }
+                &>div {
+                    @extend .cf-fleMiddle;
+                }
+            }
+            .cf-line-dot {
+                width: 100%;
+                height: 1px;
+                border-bottom: 1px dashed white;
+            }
+        }
+        .cf-group-2 {
+            text-align: center;
+            padding: 20px;
+            .cf-item {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                min-height: 200px;
+                max-width: 640px;
+                border: 1px dashed $borrow;
+                border-radius: 20px;
+                background-color: white;
+                padding: 20px;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+                .cf-deco-left-top {
+                    position: absolute;
+                    left: -10px;
+                    top: -15px;
+                }
+            }
+        }
+    }
+
+    .cf-sec-10 {
+        .cf-group-1 {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            .cf-item-1,
+            .cf-item-2,
+            .cf-item-3 {
+                position: relative;
+                max-width: 640px;
+                margin: 0 auto;
+            }
+            .cf-item-1 {
+                padding-top: 20px;
+                text-align: center;
+            }
+            .cf-item-2 {
+                @extend .cf-fleContainer-mob;
+                &>div {
+                    @extend .cf-fleMiddle;
+                }
+                &>.cf-left {
+                    @extend .cf-fleOne;
+                }
+            }
+            .cf-item-4 {
+                margin-bottom: 40px;
+            }
+            .cf-item-5 {
+                @extend .cf-fleContainer-mob;
+                &>div {
+                    position: relative;
+                    @extend .cf-fleOne;
+                    .cf-img {
+                        width: 127px;
+                        height: 127px;
+                        margin: 0 auto;
+                        margin-bottom: 20px;
+                        border-radius: 80px;
+                    }
+                    .cf-text {
+                        font-size: 18px;
+                        color: white;
+                        text-align: center;
+                    }
+                }
+            }
+            .cf-deco-left-top {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 250px;
+                border-bottom: 1px dashed white;
+            }
+            .cf-deco-right-bottom {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 250px;
+                border-bottom: 1px dashed white;
+            }
+        }
+        .cf-group-2 {
+            .cf-item-1 {}
+            .cf-item-2 {}
+        }
+        .cf-group-3 {}
+    }
+
+    .cf-hotline-main {
+        position: fixed;
+        left: 10px;
+        bottom: 10px;
+        cursor: pointer;
+        padding: 5px 10px;
+        background-color: $red;
+        color: white;
+        border-radius: 10px;
+        z-index: 10;
+    }
+
+    .cf-reward-btn {
+        padding: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        background-color: $orange;
+        border-radius: 30px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: white;
+        cursor: pointer;
     }
